@@ -1,0 +1,112 @@
+.history-section {
+  margin-top: 30px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+
+.history-section h2 {
+  margin-bottom: 20px;
+}
+
+.complaint-list {
+  display: grid;
+  gap: 16px;
+}
+
+.complaint-card {
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.complaint-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.complaint-card p {
+  margin: 6px 0;
+}
+.copilot-chat {
+  margin-top: 24px;
+}
+
+.copilot-chat h3 {
+  margin-bottom: 12px;
+}
+
+.copilot-chat textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.copilot-chat button {
+  margin-top: 10px;
+}
+
+.copilot-answer {
+  margin-top: 16px;
+  padding: 14px;
+  background: #f5f7fa;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.app-header {
+  background: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.app-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+.main-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+}
+
+.panel {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+.ai-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  background: #eef2ff;
+  margin-bottom: 10px;
+}@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+}

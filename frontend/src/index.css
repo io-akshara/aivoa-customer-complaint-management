@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #ffffff;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #6b7280;
+}
+
+/* Main Layout */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  padding: 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Sections */
+
+.complaint-section,
+.copilot-section {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+/* Form */
+
+.form-section {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Buttons */
+
+.submit-button,
+.analyze-button {
+  border: none;
+  border-radius: 7px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button {
+  margin-top: 25px;
+  background: #2563eb;
+  color: white;
+}
+
+.analyze-button {
+  width: 100%;
+  margin-top: 15px;
+  background: #111827;
+  color: white;
+}
+
+/* Copilot */
+
+.copilot-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 15px;
+}
+
+.copilot-header p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.copilot-content {
+  margin-top: 20px;
+}
+
+.upload-area {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.upload-area p {
+  font-weight: 600;
+}
+
+/* Risk */
+
+.risk-section {
+  margin-top: 30px;
+}
+
+.risk-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.risk-card p {
+  margin: 12px 0;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .main-container {
+    padding: 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+}
